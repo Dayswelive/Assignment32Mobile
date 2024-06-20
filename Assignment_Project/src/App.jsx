@@ -8,17 +8,19 @@ import "./index.css";
 
 const App = () => {
   return (
-    <div className="App">
+    <>
       <Navbar />
-      <TrendingNow />
-      <main className="main-content">
-        <div className="top-section">
-          <HeroSection />
-          <BigStories />
-        </div>
-        <FeaturedNews />
-      </main>
-    </div>
+      <div className="App">
+        <TrendingNow />
+        <main className="main-content">
+          <div className="top-section">
+            <HeroSection />
+            <BigStories />
+          </div>
+          <FeaturedNews />
+        </main>
+      </div>
+    </>
   );
 };
 
