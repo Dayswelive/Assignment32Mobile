@@ -4,6 +4,8 @@ import TrendingNow from "./components/TrendingNow";
 import HeroSection from "./components/HeroSection";
 import BigStories from "./components/BigStories";
 import FeaturedNews from "./components/FeaturedNews";
+import CountryGrid from "./components/CountryGrid";
+
 import "./index.css";
 
 const App = () => {
@@ -18,6 +20,7 @@ const App = () => {
             <BigStories />
           </div>
           <FeaturedNews />
+          <CountryGrid />
         </main>
       </div>
     </>
