@@ -1,0 +1,108 @@
+.countryGridContainer {
+  padding: 20px;
+}
+
+.topSection {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.categories {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.categoryButton {
+  padding: 10px 20px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.categoryButton:hover {
+  background-color: #45a049;
+}
+
+.searchInput {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.countryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.countryCard {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.flagImage {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.countryName {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+.countryDetail {
+  margin: 5px 0;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.pageButton {
+  padding: 10px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 16px;
+}
+
+.pageButton:hover {
+  background-color: #45a049;
+}
+
+.activePageButton {
+  background-color: #2e7d32;
+}
+
+@media (max-width: 768px) {
+  .categories {
+    flex-direction: column;
+  }
+
+  .categoryButton {
+    margin: 5px 0;
+  }
+
+  .pageButton {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+}
