@@ -13,6 +13,7 @@ body {
   padding: 1rem;
   background-color: #f8f9fa;
   position: relative;
+  width: 100%;
 }
 
 .nav-links {
@@ -118,7 +119,7 @@ body {
   border: 1px solid #e3960082;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   body {
     margin: 20px;
     padding-left: 20px;

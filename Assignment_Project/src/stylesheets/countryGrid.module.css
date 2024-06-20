@@ -1,7 +1,9 @@
+/* General container for the country grid */
 .countryGridContainer {
   padding: 20px;
 }
 
+/* Top section containing categories and search bar */
 .topSection {
   display: flex;
   flex-direction: column;
@@ -9,12 +11,17 @@
   margin-bottom: 20px;
 }
 
+/* Styling for the categories section */
 .categories {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
+  padding: 10px;
+  background-color: #f0f0f0; /* Light background for categories */
+  border-radius: 10px; /* Rounded corners for the categories container */
 }
 
+/* Styling for individual category buttons */
 .categoryButton {
   padding: 10px 20px;
   border: none;
@@ -23,12 +30,22 @@
   cursor: pointer;
   flex: 1 1 auto;
   text-align: center;
+  transition: background-color 0.3s ease;
+  border-radius: 8px; /* Rounded corners for buttons */
 }
 
+/* Hover state for category buttons */
 .categoryButton:hover {
   background-color: #45a049;
 }
 
+/* Active category button styling */
+.activeCategoryButton {
+  background-color: #2e7d32;
+  font-weight: bold;
+}
+
+/* Styling for the search input field */
 .searchInput {
   padding: 10px;
   width: 100%;
@@ -36,12 +53,14 @@
   border-radius: 4px;
 }
 
+/* Grid layout for displaying countries */
 .countryGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
 
+/* Styling for individual country cards */
 .countryCard {
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -49,21 +68,25 @@
   text-align: center;
 }
 
+/* Styling for country flag images */
 .flagImage {
   width: 100px;
   height: auto;
   margin-bottom: 10px;
 }
 
+/* Country name styling */
 .countryName {
   margin: 10px 0;
   font-size: 1.2em;
 }
 
+/* Country detail text styling */
 .countryDetail {
   margin: 5px 0;
 }
 
+/* Pagination container styling */
 .pagination {
   display: flex;
   justify-content: center;
@@ -71,6 +94,7 @@
   margin-top: 20px;
 }
 
+/* Pagination button styling */
 .pageButton {
   padding: 10px;
   border: none;
@@ -81,16 +105,30 @@
   height: 40px;
   border-radius: 50%;
   font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
+/* Hover state for pagination buttons */
 .pageButton:hover {
   background-color: #45a049;
 }
 
+/* Active pagination button styling */
 .activePageButton {
   background-color: #2e7d32;
 }
 
+/* Styling for the no countries dialog box */
+.noCountriesDialog {
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #f44336;
+  border-radius: 10px;
+  background-color: #ffe5e5;
+  color: #d32f2f;
+  font-weight: bold;
+}
+/* Responsive styling for smaller screens */
 @media (max-width: 768px) {
   .categories {
     flex-direction: column;
