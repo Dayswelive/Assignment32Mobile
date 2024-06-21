@@ -9,7 +9,6 @@ import {
   FaNewspaper,
   FaGraduationCap,
 } from "react-icons/fa";
-// import "./Navbar.css";
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);

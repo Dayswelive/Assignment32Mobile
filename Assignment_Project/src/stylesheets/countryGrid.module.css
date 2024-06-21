@@ -17,8 +17,8 @@
   gap: 10px;
   flex-wrap: wrap;
   padding: 10px;
-  background-color: #f0f0f0; /* Light background for categories */
-  border-radius: 10px; /* Rounded corners for the categories container */
+  background-color: #f0f0f0;
+  border-radius: 10px;
 }
 
 /* Styling for individual category buttons */
@@ -31,7 +31,7 @@
   flex: 1 1 auto;
   text-align: center;
   transition: background-color 0.3s ease;
-  border-radius: 8px; /* Rounded corners for buttons */
+  border-radius: 8px;
 }
 
 /* Hover state for category buttons */
